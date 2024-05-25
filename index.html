@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keansburg Park</title>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- header section start -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="index.html" class="logo"><span>Keans</span>burg Park</a>
+    <nav class="navbar">
+      <a href="#home"> Home</a>
+      <a href="#book"> book</a>
+      <a href="#about"> about</a>
+      <a href="#services"> services</a>
+      <a href="#gallery"> gallery</a>
+      <a href="#features">Features</a>
+      <a href="#contact"> contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+    <a href="login.html" style="color: whitesmoke; font-size: 19px;">Login / Sign up</a>
+
+  </header>
+
+  <!-- header section end -->
+  <!-- login form  -->
+  <div class="login-form-container">
+    <i class="fas fa-time" id="form-close"></i>
+    <form action="">
+      <h3>Login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">remember me</label>
+      <p>forget password <a href="">Click here</a></p>
+      <p>don't have and account? <a href="">Register now</a></p>
+    </form>
+  </div>
+
+  <!-- home section start  -->
+  <scetion class="home" id="home">
+    <div class="content"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h3>adventure is worthwhile</h3>
+      <p>discover new places with us, adventure awaits</p>
+      <a href="#home" class="btn" onclick="homee()">discover more</a><br><br><br><br><br>
+    </div>
+    <div class="controls">
+      <span class="vid-btn active" data-src="video (1080p)-1.mp4"></span>
+      <span class="vid-btn " data-src="video (1080p)_2.mp4"></span>
+      <span class="vid-btn" data-src="video (1080p)-3.mp4"></span>
+    </div>
+    <div class="video-container">
+      <video src="video (1080p)-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+    </section>
+    <section class="text-gray-600 body-font " id="review">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="row" id="name">
+          <div class="col-3 p-4 md:w-1/4 sm:w-1/2 w-full text-center ">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg mm">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                style="height: 90px; width: 120px;">
+                <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+              <p class="leading-relaxed">Downloads</p>
+            </div>
+          </div>
+          <div class="col-3 p-4 md:w-1/4 sm:w-1/2 w-full text-center ">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg mm">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                style="height: 90px; width: 120px;">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">1.3K</h2>
+              <p class="leading-relaxed">Users</p>
+            </div>
+          </div>
+          <div class="col-3 p-4 md:w-1/4 sm:w-1/2 w-full text-center ">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg mm">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24"
+                style="height: 90px; width: 120px;">
+                <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+                <path
+                  d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z">
+                </path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">74</h2>
+              <p class="leading-relaxed">Files</p>
+            </div>
+          </div>
+          <div class="col-3 p-4 md:w-1/4 sm:w-1/2 w-full text-center ">
+            <div class="border-2 border-gray-200 px-4 py-6 rounded-lg mm">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="text-indigo-500 w-12 h-12 mb-3 inline-block " viewBox="0 0 24 24"
+                style="height: 90px; width: 120px;">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-gray-900">46</h2>
+              <p class="leading-relaxed">Places</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="stats-counter" class="stats-counter" style="background-color: #FFF5E0; ">
+      <div class="container" id="services">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <img src="assets/assets/park3.jpg" alt="" class="img-fluid" style="width: 600px; height: 440px;">
+          </div>
+          <div class="col-lg-6">
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
+            </div>
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- about  -->
+    <section class="about" id="about" style="background-color: #fff;">
+      <div class="about-img">
+        <img src="assets/assets/park7.jpg" alt="">
+      </div>
+      <div class="about-content">
+        <!-- <h2 class="heading">About </h2> -->
+        <div class="main-text">
+          <h1><span>About</span> Us</h1>
+        </div><br>
+        <h3>Keansburg Park</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus iste accusamus
+          obcaecati fugit error. Natus, assumenda aspernatur ex placeat necessitatibus expedita voluptate sunt
+          commodi. Totam dolorem culpa sed architecto.</p>
+        <a href="#about" class="btn" onclick="huzaa()">Read More</a>
+      </div>
+    </section>
+
+
+
+    <section class="portfolio" id="portfolio" style="background-color: #eedcb7;">
+
+      <!-- <h2 class="heading">Latest Slides </h2> -->
+      <div class="main-text">
+        <h1><span>Latest</span> Project</h1>
+      </div>
+      <div class="portfolio-container" id="gallery">
+        <div class="portfolio-box">
+          <div class="card">
+            <img src="assets/assets/park1.jpg" alt="">
+            <div class="card-body">
+              <a href="#gallery" class="card-title">slides 1</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <div class="card">
+            <img src="assets/assets/park3.jpg" alt="">
+            <div class="card-body">
+              <a href="#gallery" class="card-title">slides 2</a>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <div class="card">
+            <img src="assets/assets/park13.jpg" alt="">
+            <div class="card-body">
+              <a href="#gallery" class="card-title">slides 3</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-box">
+
+          <div class="portfolio-box">
+            <div class="card">
+              <img src="assets/assets/park5.jpg" alt="">
+              <div class="card-body">
+                <a href="#gallery" class="card-title">slides 4</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-box">
+
+          <div class="portfolio-box">
+            <div class="card">
+              <img src="assets/s5.jpg" alt="">
+              <div class="card-body">
+                <a href="#gallery" class="card-title">slides 5</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-box">
+
+          <div class="portfolio-box">
+            <div class="card">
+              <img src="assets/assets/park4.jpg" alt="">
+              <div class="card-body">
+                <a href="#gallery" class="card-title">slides 6</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- book section start  -->
+    <section class="book" id="book" style="background-color: #fff;">
+      <div class="container">
+        <div class="b-text">
+          <!-- <h1>BOOK</h1> -->
+          <div class="main-text">
+            <h1><span>BOOK</span> </h1>
+          </div>
+        </div><br><br><br><br><br>
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card1">
+              <img src="assets/assets/park2.jpg" alt=""style="width: 600px; height: 440px;">
+            </div>
+          </div>
+          <div class="col-md-6 py-3 py-md-0 card2">
+            <form action="#">
+              <input type="text" class="form-control" placeholder="where to" required>
+              <input type="text" class="form-control" placeholder="How Many" required>
+              <input type="date" class="form-control" placeholder="Arrivals" required>
+              <input type="date" class="form-control" placeholder="Leaving" required>
+              <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea>
+              <a href="#book" class="btn" onclick="huzaa()">Read More</a>
+
+
+            </form>
+          </div>
+        </div>
+    </section><br><br>
+    <!-- book section end  -->
+    <!-- product  -->
+    <!-- eedcb7 -->
+    <div class="featured py-5" id="features" style="background-color: #fff;">
+      <div class="container">
+        <!-- <h2 class=" fw-bold text-center pt-5 pb-5 fs-1" style="color: red;">
+          Featured Cards
+        </h2> -->
+        <div class="main-text">
+          <h1><span>Featured</span> Card</h1>
+        </div>
+      </div><br>
+
+      <div class="container products-container" >
+        <div class="row g-3" id="cards">
+</div>
+
+  <!-- Contact Us start -->
+  <section class="contact" id="contact">
+    <div class="main-text">
+      <h1><span>Contact</span> Us</h1>
+    </div>
+    <form class="form" action="#home" onsubmit="return validation()">
+     
+
+
+
+      <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name "> <br>
+      <span id="usererror" class="text-danger"></span>
+      <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone "><br>
+      <span id="mobileerror" class="text-danger"></span>
+      <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email "><br>
+      <span id="emailerror" class="text-danger"></span>
+      <textarea class="form-input" name="" id="msg" cols="30" rows="10"
+        placeholder="Textarea"></textarea> <br>
+      <span id="msgcheck" class="text-danger"></span> <br>
+      <button class="btn btn-sm btn-dark">Submit</button>
+
+    </form>
+  </section>
+  <!-- contact us end -->
+
+
+    <!-- <footer >
+      <div class="container py-5" id="contact" style="width: 2800px; margin-left: 0px; margin-right: 0px; left: 0;
+      right: 0; position: absolute;  background-color: #eedcb7;">
+        <div class="row">
+          <div class="col-4 col-lg-4">
+            <h3 class="fw-bold pb-3" style="font-size: 30px;">Contact</h3>
+            <br>
+            <p style="color: white; font-size: 14px;">
+              Karachi, <br />
+              Metro Star get
+            </p>
+            <a href="https://muhammad-huzaifa-portfolio.netlify.app/" class=""
+              style="font-size: 14px; color: blue;">huzaifaaptech795@gmail.com</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a class="navbar-brand text-black fw-bold" href="index.html" data-bs-toggle="tooltip"
+              data-bs-title="Keansburg Park" data-bs-placement="bottom" style="font-size: 35px;"><span class="text-"
+                style="color: rgb(255, 166, 0);">Keans</span>burg Park</a>
+          </div>
+          <div class="col-4 col-lg-4 ">
+            <h3 class="fw-bold pb-3" style="font-size: 30px;">Website</h3><br>
+            <div class="d-flex flex-column hover" style="font-size: 14px;  text-decoration: none;">
+              <a href="#home" class="text-primary">Home</a>
+              <a href="#book" class="text-white">Book</a>
+              <a href="#about" class="text-white">About</a>
+              <a href="#services" class="text-white">Services</a>
+              <a href="#gallery" class="text-white">Gallery</a>
+              <a href="#review" class="text-white">Review</a>
+              <a href="#contact" class="text-white">Contact</a>
+            </div>
+          </div>
+          <div class="col-4 col-lg-4 ">
+            <h3 class="fw-bold pb-3" style="font-size: 30px; ">Services</h3><br>
+
+            <div class="d-flex flex-column hover " style="font-size: 14px;  text-decoration: none; ">
+              <a href="#home" class="text-primary">Home</a>
+              <a href="#book" class="text-white">Book</a>
+              <a href="#about" class="text-white">About</a>
+              <a href="#services" class="text-white">Services</a>
+              <a href="#gallery" class="text-white">Gallery</a>
+              <a href="#review" class="text-white">Review</a>
+              <a href="#contact" class="text-white">Contact</a>
+            </div>
+            <BR>
+          </div>
+        </div>
+      </div>
+
+    </footer> -->
+    <!-- last work footer  -->
+
+
+    <footer class="footers">
+      <div class="container">
+        <div class="row">
+          <div class="footer-cols">
+            <h4>Site Map</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Book</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+  
+            </ul>
+          </div>
+          <div class="footer-cols">
+            <h4>Location</h4>
+            <ul>
+              <li><a href="./Map.html">Google Map</a></li>
+  
+  
+            </ul>
+          </div>
+          <div class="footer-cols">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-cols">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-footer">
+              Copyright &copy; 2024 - www.keansburghpark.com - All rights reserved
+            </p>
+  
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer" id="footerh" style="z-index: 100; position: relative; top: 360px;">
+      <div class="footer-text">
+        <P>Copyright &copy ; 2024 by Muhammad Huzaifa | All Rights Reserved.</P>
+      </div>
+      
+
+</body>
+<script src="js/script.js"></script>
+<script>
+      var x=document.getElementById("cards")
+    fetch("main.json")
+    .then((a)=>{
+        return a.json();
+    })
+    .then((b)=>{
+        b.forEach((e) => {
+            x.innerHTML+=`
+            <div class=" card mt-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 product" >
+            <img src="./assets/${e.path}" class="card-img-top " data-bs-toggle="modal"
+              data-bs-target="#gallery-modal" type="button" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${e.title}</h5>
+              <p class="card-text">${e.desc}</p><br>
+          <a href="./product.html?id=${e.id}" class="btn btn-primary">${e.btn}</a>
+
+
+            </div>
+          </div>
+            `
+        });
+    })
+</script>
+<script>
+  function huzaa(){
+    alert("Your data has been successfully submited")
+  }
+</script>
+<script>
+  function homee(){
+    alert("Your data has been successfully submited")
+  }
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  function huzi() {
+    alert("Your data has been successfully Submite")
+  }
+</script>
+<script>
+  function validation() {
+    //getting values from textboxes
+    var u = document.getElementById("name").value;
+    var e = document.getElementById("email").value;
+    var m = document.getElementById("phone").value;
+    var msg = document.getElementById("msg").value;
+    // validate/check values are correct or not
+    var usercheck = /^[a-zA-Z. ]{3,20}$/;
+    var emailcheck = /^[a-zA-Z_]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z.]{2,6}$/;
+    var mobilecheck = /^[0-9]{11}$/;
+    var msgcheck = /^[a-zA-Z. ]{10,500}$/;
+    if (usercheck.test(u)) {
+      document.getElementById("usererror").innerHTML = "";
+    }
+    else {
+      document.getElementById("usererror").innerHTML = " **Invalid  User Name** ";
+      return false;
+    }
+    if (emailcheck.test(e)) {
+      document.getElementById("emailerror").innerHTML = "";
+    }
+    else {
+      document.getElementById("emailerror").innerHTML = " **Invalid  Email** ";
+      return false;
+    }
+
+    if (mobilecheck.test(m)) {
+      document.getElementById("mobileerror").innerHTML = "";
+    }
+    else {
+      document.getElementById("mobileerror").innerHTML = " **Invalid Mobile Number** ";
+      return false;
+    }
+    if (msgcheck.test(msg)) {
+      document.getElementById("msgcheck").innerHTML = "";
+    }
+    else {
+      document.getElementById("msgcheck").innerHTML = " **Please provide proper messager** ";
+      return false;
+    }
+    alert("Your message has been submitted");
+  }
+</script>
+
+
+</script>
+<!-- clients slider  -->
+<script src="assets/glightbox.min.js"></script>
+<script src="assets/purecounter_vanilla.js"></script>
+<script src="assets/main.js"></script>
+
+</html>
